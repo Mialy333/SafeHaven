@@ -109,7 +109,9 @@ safehaven/
 │
 ├── docs/             # Architecture decisions, accessibility audit, threat model
 │
-└── projet/           # Web prototype (React + Vite) — reference implementation
+└── projet/           # Web prototype (React + Vite), first generated with Base44
+                      # Deployed on Vercel (root directory: projet)
+                      # projet/widget/ is a vendored copy of the LI.FI widget (third-party code)
 ```
 
 ---
@@ -126,8 +128,8 @@ safehaven/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-org/safehaven.git
-cd safehaven
+git clone https://github.com/Mialy333/SafeHaven.git
+cd SafeHaven
 
 # 2. Copy env and fill in your keys
 cp .env.example .env
@@ -165,6 +167,18 @@ See [`.env.example`](.env.example) for all required keys.
 - Always explain what a strategy does in plain language before presenting it
 - Always disclose risks and direct users to consult local financial professionals for major decisions
 - Built-in scam and phishing detection in the agent safety layer
+
+---
+
+## How It Was Built
+
+SafeHaven Money started at the selection hackathon for the Dev3Pack accelerator, where it was delivered on time and presented to the jury.
+
+- **Mobile app (`app/`) and agent (`agent/`)**: written with the help of AI coding assistants, including Codex.
+- **Web prototype (`projet/`)**: first generated with Base44.
+- **`projet/widget/`**: third-party code (LI.FI widget), kept as is.
+
+**Status:** the project is currently on pause.
 
 ---
 
